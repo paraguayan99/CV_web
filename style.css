@@ -1,0 +1,528 @@
+/* STYLE POUR L'IMPRESSION */
+
+@media print {
+    .noprint{ display: none !important; }
+
+    html{ font-size: 8pt; }
+
+    body {
+        color: black;
+        background-color: transparent;
+    }
+
+    .reveal-loaded .reveal [class*="reveal-"] {
+        opacity: 1!important;
+    }
+
+    .reveal-loaded [class*="reveal-"]{
+        animation: none!important;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 1000px;
+        max-width: 1280px;
+        margin: 1em auto;
+    }
+
+    header {
+        justify-content: space-evenly;
+        background-color: #30303018;
+    }
+
+    #photo_cv {
+        width: 15%;
+        justify-content: center;
+    }
+
+    #photo_cv img {
+        max-width: 100%;
+        max-height: 100px;
+    }
+
+    #mailto, #tel {
+    color : black;
+    }
+
+    #infos {
+        width: 30%;
+    }
+
+    #project {
+        width: 40%;
+    }
+
+    main {
+        justify-content: flex-end;
+    }
+
+    main section {
+        /* a modifier pour le centrage et le retour à la ligne */
+        width: 75%;
+    }
+
+    section h2 {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    main section div aside {
+        width: 20%;
+    }
+
+    main section div article {
+        width: 80%;
+    }
+
+}
+
+/* SUPPORT SMARTPHONE */
+@media screen and (max-width: 599px) {
+    .reveal-loaded .reveal [class*="reveal-"] {
+        opacity: 0!important;
+        animation: none!important;
+        transition: 0s!important;
+    }
+
+    .reveal-loaded [class*="reveal-"]{
+        animation: revealAnimation 1s cubic-bezier(.5, 0, 0, 1) both;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 599px;
+        max-width: 599px;
+        margin: 1em auto;
+    }
+
+    body {
+        color: #fff;
+        background-color: #131313;
+    }
+
+    header {
+        justify-content:right;
+        background-color: #303030;
+    }
+
+    #photo_cv {
+        width: 40%;
+        justify-content: center;
+    }
+
+    #photo_cv img {
+        max-width: 100%;
+        max-height: 180px;
+    }
+
+    #mailto, #tel {
+    color : white;
+    }
+
+    #infos {
+        width: 60%;
+    }
+
+    #project {
+        width: 80%;
+    }
+
+    main {
+        justify-content: flex-end;
+    }
+
+    main section {
+        /* a modifier pour le centrage et le retour à la ligne */
+        width: 95%;
+    }
+
+    section h2 {
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    main section div aside {
+        width: 20%;
+    }
+
+    main section div article {
+        width: 80%;
+    }
+
+    #sendmail {
+        width: 80%;
+        margin: 0.5em 10%;
+    }
+
+    #submit {
+        width: 30%;
+    }
+
+}
+
+/* SUPPORT TABLETTE */
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .reveal-loaded .reveal [class*="reveal-"] {
+        opacity: 0!important;
+        animation: none!important;
+        transition: 0s!important;
+    }
+
+    .reveal-loaded [class*="reveal-"]{
+        animation: revealAnimation 1s cubic-bezier(.5, 0, 0, 1) both;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 600px;
+        max-width: 999px;
+        margin: 1em auto;
+    }
+
+    body {
+        color: #fff;
+        background-color: #131313;
+    }
+
+    header {
+        justify-content:right;
+        background-color: #303030;
+    }
+
+    #photo_cv {
+        width: 40%;
+        justify-content: center;
+    }
+
+    #photo_cv img {
+        max-width: 100%;
+        max-height: 180px;
+    }
+
+    #mailto, #tel {
+    color : white;
+    }
+
+    #infos {
+        width: 60%;
+    }
+
+    #project {
+        width: 80%;
+    }
+
+    main {
+        justify-content: flex-end;
+    }
+
+    main section {
+        /* a modifier pour le centrage et le retour à la ligne */
+        width: 95%;
+    }
+
+    section h2 {
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    main section div aside {
+        width: 20%;
+    }
+
+    main section div article {
+        width: 80%;
+    }
+
+    #sendmail {
+        width: 60%;
+        margin: 0.5em 20%;
+    }
+
+    #submit {
+        width: 20%;
+    }
+
+}
+
+/* SUPPORT DESKTOP */
+@media screen and (min-width: 1000px) {
+    .reveal-loaded .reveal [class*="reveal-"] {
+        opacity: 0!important;
+        animation: none!important;
+        transition: 0s!important;
+    }
+
+    .reveal-loaded [class*="reveal-"]{
+        animation: revealAnimation 1s cubic-bezier(.5, 0, 0, 1) both;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 1000px;
+        max-width: 1280px;
+        margin: 1em auto;
+    }
+
+    body {
+        color: #fff;
+        background-color: #131313;
+    }
+
+    header {
+        justify-content: space-evenly;
+        background-color: #303030;
+    }
+
+    #photo_cv {
+        width: 15%;
+        justify-content: center;
+    }
+
+    #photo_cv img {
+        max-width: 100%;
+        max-height: 180px;
+    }
+
+    #mailto, #tel {
+    color : white;
+    }
+
+    #infos {
+        width: 30%;
+    }
+
+    #project {
+        width: 40%;
+    }
+
+    main {
+        justify-content: flex-end;
+    }
+
+    main section {
+        /* a modifier pour le centrage et le retour à la ligne */
+        width: 85%;
+    }
+
+    section h2 {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    main section div aside {
+        width: 20%;
+    }
+
+    main section div article {
+        width: 80%;
+    }
+
+    #sendmail {
+        width: 40%;
+        margin: 0.5em 30%;
+    }
+
+    #submit {
+        width: 15%;
+    }
+}
+
+/* CSS COMMUN A TOUS LES SUPPORTS */
+.hidden {
+    display: none !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+#backToTop {
+    bottom: 1em;
+    right: 1em;
+}
+
+#backToTop {
+    z-index: 99;
+    position: fixed;
+    font-size: 3em;
+}
+
+#backToTop i {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#backToTop i:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+body {
+    font-family: "Lustria", serif;
+}
+
+ul {
+    margin-block: 0;
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 95%;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 15px 50px;
+    padding-top : 1em;
+    padding-bottom: 1em;
+}
+
+#photo_cv img {
+    border-radius: 50% 20% / 10% 40%;
+}
+
+#infos h2, #infos li:not(:last-child) {
+    font-variant: small-caps;
+}
+
+#project h2 {
+    font-variant: small-caps;
+}
+
+main {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+}
+
+section h2 {
+    font-variant: small-caps;
+    padding-bottom: 0.2em;
+    border-bottom: solid;
+}
+
+main section {
+    flex-wrap: wrap;
+}
+
+main section div {
+    width: 100%;
+    padding: 1em 0em;
+}
+
+#computer div, #extra-professionnal div {
+    padding: 0;
+}
+
+footer {
+    flex-wrap: wrap;
+    width: 95%;
+    height: 13em;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    border-radius: 15px 50px
+}
+
+footer div {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#cvbymailform {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cvbymailform label {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+#cvbymail i {
+    font-size: 1.3em;
+}
+
+#cvbymail input {
+    height: 2em;
+    color : black;
+    font-family: "Lustria", serif;
+    font-weight: bold;
+    border-radius: 4px 10px;
+    border-style: none;
+}
+
+#sendmail, #submit {
+    background-color: white;
+    text-align: center;
+}
+
+#sendtrue {
+    color: rgb(1, 233, 1);
+    font-weight: bold;
+}
+
+#sendfalse, #errormail {
+    color: rgb(255, 196, 0);
+    font-weight: bold;
+}
+
+#autor div {
+    color: grey;
+    display: inline-flex;
+}
+
+ul li i {
+    width: 1.5em;
+    text-align: center;
+}
+
+h2 i {
+    width: 1.5em;
+}
+
+/* ANIMATIONS OPACITE AU SCROLL */
+
+.reveal-loaded .reveal-2 {
+  animation-delay: .1s;
+}
+
+.reveal-loaded .reveal-3 {
+  animation-delay: .2s;
+}
+
+.reveal-loaded .reveal-4 {
+  animation-delay: .3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-loaded  [class*="reveal-"] {
+    animation: none!important;
+  }
+}
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
